@@ -9,7 +9,8 @@
     "start": "node build/dev-server.js",
     "build": "node build/build.js",
     "lint": "eslint --ext .js,.vue src",
-    "unit": "jest"
+    "unit": "jest",
+    "e2e": "testcafe chrome tests/e2e --app 'npm run dev' --app-init-delay 10000 -S -s .evidences"
   },
   "jest": {
     "moduleFileExtensions": [
